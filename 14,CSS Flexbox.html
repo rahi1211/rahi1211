@@ -1,0 +1,91 @@
+<!-- flexbox is a one dimensional layout method for laying out items in rows or columns -->
+
+<!-- css flexbox is a better to align items into a container -->
+
+<!-- flexbox =flexible + box -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexBox</title>
+    <style>
+        .container{
+            height: 600px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex; /*initialize the container as flexbox*/
+           
+         /*flex properties for flex container*/
+
+         /*flex-direction:row; /*default value is row*/
+         /*flex-direction: column;
+         /*flex-direction: row-reverse;
+         /*flex-direction: column-reverse;
+         flex-wrap: wrap;/*default value of warp is no-warp*/
+         /*flex-flow:row-reverse wrap ; /* row reberse and wrap ek sath set kr skten hain*/
+
+        /*justify concant will justify the content in horizontal direction*/
+         /*justify-content: center;
+         justify-content: space-between; /*2box ko same space dedo*/
+         /*justify-content: space-evenly; /*sare jo be spaces hain wo baraber hone chaiye*/
+         /*justify-content: space-around;/*lesi be box me dono tarf brabar space krdo*/
+         /*flex-direction: column;
+
+        /*justify concant will justify the content in vertical direction*/
+        /*align-items: center;
+        /*align-items: flex-end;
+        align-items: flex-start; /*default*/
+        /*align-items: stretch;*/
+       
+
+        }
+
+       
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1{
+             /*flex properties for flex item*/
+            /*Higher the order ,later it shows up in the container*/
+
+           /*order: 2;*/
+           /* flex-grow: 3; /*ab yeh zadya space lega nagtie num invalid hoti hain*/
+        
+            
+        }
+        #item-2{
+            flex-shrink: 3; /*ab yeh zadya chota howa dekha ga*/
+            flex-basis: 320px;/*when direction is set to row flex basis will controll width */
+            /*when direction is set to colum flex basis will controll hight */
+            
+
+        }
+        #item-3{
+           flex: 2 2 200px;
+           align-self: flex-end;/*toh yeh end ma chale jai ga*/
+           align-self: flex-start;
+           align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is flexbox tutorail</h1>
+    <div class="container">
+        <div class="item" id="item-1">Frist Box</div>
+        <div class="item" id="item-2">Secound Box</div>
+        <div class="item" id="item-3">Thrid Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+</body>
+</html>

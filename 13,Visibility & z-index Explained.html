@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & z-index</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+
+        }
+
+        #box1 {
+            background-color: green;
+        }
+
+        #box2 {
+            visibility: hidden;
+            display: none;
+
+            /*visibiltiy hide element ko hide karta hai but yah os element ki jhag wahi rahti hai so osko ka liye display none use karna hoga*/
+
+
+            background-color: red;
+        }
+
+        #box3 {
+            position: relative;
+            top: 49px;
+            background-color: blue;
+            z-index: -35;
+
+            /*jiske me z,index bare hoge wo upar aa jai ga*/
+        }
+
+        /*default postiin py z index kaam nhi kara ga*/
+
+        #box4 {
+            top: 14px;
+            position: relative;
+            background-color: yellow;
+
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+</body>
+
+</html>

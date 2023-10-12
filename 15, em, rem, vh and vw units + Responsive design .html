@@ -1,0 +1,61 @@
+<!-- * Endless new resolutions and devices are difficult to support separately for a web debelper  -->
+
+<!-- * Responsive design is a way for a web developer to make his website adapt to all the devices and resolutions -->
+
+<!-- * Responsive design is a necessity and to a luxury anymore -->
+
+<!-- various way to achive responsive degsign -->
+
+<!-- 1.setting up viewport -->
+
+<!-- 2.use max-width/max-hight -->
+
+<!-- 3.use css media Queris -->
+
+<!-- 4. using rem/vh/vw units over pixels -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>size units</title>
+    <style>
+      html {
+        font-size: 25px;
+      }
+      .container {
+        font-size: 10px;
+        border: 2px solid red;
+        /*width: 400px;*/
+        /*height: 344px;*/
+        height: 100vh; /*100 vh ka matlbhota hai ya puri hight lele*/
+        width: 100vw;/*100vw matlb pure width lele*/
+        /*vh matlb view port height*/
+        /*vw ka matlb hai view port width*/
+      }
+      h1 {
+        font-size: 10px;
+        text-align: center;
+      }
+
+      #frist {
+        font-size: 3em; /*em units em units kia karti hain ki jo be prent xontainer hai osko relative apka font sive change karti hain*/
+        /*3em matlb 10 gona print ka*/
+        padding: 3em; /*ab ap na font size da de toh yeh ab 3xtimes font ka lega na ki 3xtimes prent */
+      }
+
+      #second {
+        font-size: 3rem; /*rem html ka font size ka relative chalta hai*/
+        padding: 3rem; /*3rem multiple hoga print sy jo hai html 25*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="frist">This is frist Headding</h1>
+      <h1 id="second">This is secound Headding</h1>
+      <h1 id="third">This is third Headding</h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    
+    <style>
+ /*this is call univasal selecter*/       
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+
+         /*ase karne sy sub kuch me by defflut margin or padding 0 ho jaiye ge jab ap ose nache overwtrite na kren*/    
+        }
+         .container{
+            background-color: aquamarine;
+            border: 3px solid red;
+        /*we can set margin/padding to left right top bottom like this*/
+
+        /*padding-top: 0cm;*/
+        /*padding-left: ;*/
+        /*padding-left: ;*/
+        padding: 9px;
+        padding: 23px 56px 6px 78px; /*padding = top right left buttom*/
+
+        margin: 34px;
+        border-radius: 25px;
+        width: 333px;
+        box-sizing: border-box;
+/*jo actual width hogi toh osme margin aai gaor padding  aa jai ge sub kuch aa jai ga toh oska agr kuch or be change kren ge toh width be chnage ho jai ge toh agr ap chatin hain ki yah na ho toh apko box sizeing property ka use kren ge*/ 
+         }
+         body{
+            background-color: rgb(108, 16, 16);
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+       <p id="frist">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit nihil, eius iure fugit nulla, consequuntur molestias similique aperiam corrupti, illum et praesentium voluptates!</p>      
+    </div>
+
+    <div class="container">
+        <h3>this is my heading</h3>
+       <p id="secound">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit nihil, eius iure fugit nulla, consequuntur molestias similique aperiam corrupti, illum et praesentium voluptates!</p>      
+    </div>
+
+    <div class="container">
+        <h3>this is my heading</h3>
+       <p id="thrid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit nihil, eius iure fugit nulla, consequuntur molestias similique aperiam corrupti, illum et praesentium voluptates!</p>      
+    </div>
+</body>
+</html>
+
+<!-- margin andr sy hoti hai element ka  -->
+<!-- or padding bhir sy -->
