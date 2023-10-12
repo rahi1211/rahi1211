@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h2>This is HTML forms tutorail</h2>
+    <!-- yah sara data sumit kar deta hai backend me  -->
+    <form action="backend.php">
+        <!-- label matlb ya kiska label hai  -->
+
+        <label for="name">name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <label for="myRole">myRole</label>
+        <div>
+            <input type="text" name="myRole" id="myRole">
+        </div>
+        <br>
+
+        <div>
+            <!-- name wo naam hai jisa apka backend as tag ko pachna ga -->
+        Email: <input type="text" name="myemail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="mydata">
+        </div>
+        <br>
+        <div>
+            Bouns: <input type="number" name="mybouns" >
+        </div>
+        <br>
+        <div>
+            are you eligible?  <input type="checkbox" name="myEligibility" >
+            
+        </div>
+        <br>
+        <div>
+            <!-- asmsy ap sirf ek ko he cjose kr pai ge qk ka anka naam same ha -->
+            Gender: Male <input type="radio" name="myGender" >  FeMale <input type="radio" name="myGender" >
+            other:  <input type="radio" name="myGender" >
+            <div>
+        <br>
+        <div>
+        write about yourself: <br><textarea name="mytext"  cols="30" rows="10"></textarea>
+         <div>
+            <br>
+            <div>
+            <label for="car">car</label>
+            <select name="mycar" id="car">
+                <option value="Ind" selected>Indica</option>
+                <option value="swf">swift</option>
+
+<!-- agr ap chatin hain ki direct selted ho jai  -->
+            </select>    
+            </div>
+            <br>
+
+                <div>
+                    <input type="submit" value="submit Now">
+
+                    <input type="reset" value="Reset Now">
+                </div>
+    </form>
+        
+        <!-- div divison karta hai line break karta hai  -->
+        
+        <!-- input jaha py user khud ka input de sekhe -->
+  
+
+</body>
+</html>
