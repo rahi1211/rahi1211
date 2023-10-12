@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .contaner {
+            width: 900px;
+            border: 3px solid rgb(10, 98, 10);
+            margin: auto;
+            /*yah element ko center me kr deta hai kisa karta yah ,yah margin atyo ap na de toh asne left barabar le lega*/
+            background-color: rgb(250, 226, 238);
+
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(235, 159, 159);
+
+        }
+
+        #fruit {
+            float: left;
+            width: 48%;
+
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+
+        }
+
+        #stationary {
+            /*float:left;*/
+            clear: both;
+            /*clear left matlb aska raste me left me jo be arha hai wo waha sy hat jiye* both matlb ab dono me sy koi allowed nhi hai*/
+            width: 100%;
+        }
+
+        /*text aliemnt*/
+        p,
+        h3 {
+            text-align: center;
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 23px auto;
+            width: 455px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contaner">
+        <h1> well come to my store</h1>
+        <div id="fruit" class="item">
+            <h3>fruits</h3>
+            <p id="fruitpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt a maxime
+                quo commodi consectetur ipsa iste earum itaque quis doloribus, qui necessitatibus hic et praesentium.
+                Repellendus qui ducimus numquam molestias Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Libero ipsum rerum eveniet odio ipsam molestias suscipit vel provident molestiae, beatae corporis est
+                sed nemo cumque dolore quidem numquam illo animi. Quaerat tempora facilis eaque!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt a
+                maxime quo commodi consectetur ipsa iste earum itaque quis doloribus, qui necessitatibus hic et
+                praesentium. Repellendus qui ducimus numquam molestias Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Cum nemo iure animi, sunt quis quasi explicabo quo maxime mollitia omnis accusantium
+                dolorem laborum velit alias distinctio voluptatum dolorum dolores tempore illo magni. Deleniti, harum!
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt a
+                maxime quo commodi consectetur ipsa iste earum itaque quis doloribus, qui necessitatibus hic et
+                praesentium. Repellendus qui ducimus numquam molestias.</p>
+        </div>
+        <div id="glaesses" class="item">
+            <h3>glaesses</h3>
+            <p id="glassespara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt a maxime
+                quo commodi consectetur ipsa iste earum itaque quis doloribus, qui necessitatibus hic et praesentium.
+                Repellendus qui ducimus numquam molestias.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

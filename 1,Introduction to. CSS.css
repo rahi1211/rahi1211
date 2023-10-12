@@ -1,0 +1,26 @@
+/* cs full from is cascadind style sheets */
+
+/* what is css does
+
+css gives to raw html
+css is used to give style  to our web pages 
+css is used to make website responsive  matlb agr ap phone py hain to phone haib sy dehai ga or desktop ka hiseb sy
+html is used to structure a website
+css takes a responsibility of design */
+
+css systax
+
+sabse pehle hum selector rakhten hain seletor matlb kaha
+
+then property coloer
+
+then value set this value
+
+
+/* there ways to add css the markup  markup mean html code
+
+ 1, inline css: css is added to the elements directly using style attribute
+
+2, internal css: css is kept inside the head tags in <style> tags
+
+3, external css : css is kept separately inside a.css style sheet */

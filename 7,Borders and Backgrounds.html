@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hight, width, Borders, and background </title>
+
+    <style>
+         #fristpara{
+            background-color: red;
+            height: 100px;
+            width: 455px;
+            /*border: 4px solid green;
+            yah jo nache 4 lines me ho raha ap ase asa 1 line me be kr skte hain*/
+
+            border-width: 4px;
+            border-color:green;
+            border-style: solid;
+            border-radius: 15px;
+
+         }
+
+         #secoundpara{
+
+            background-color: green;
+            height: 100px;
+            width: 455px;
+            border-top: 2px solid violet;
+            border-bottom: 5px solid rgb(181, 24, 24);
+            border-right: 5px solid;
+            border-left: solid 5px;
+
+            /*asa ap border right left butoom kaha laga apko laga skte hain*/
+
+           border: bottom left radius 20px;;
+            
+           /* sirf waha par he change hoga border*/
+
+        
+
+         }
+          
+         #thridpara{
+
+            height: 100px;
+            width: 455px; 
+            background-image:url('https://th.bing.com/th?id=ORMS.050419b08f04f587b3c611875a6d2121&pid=Wdp&w=612&h=304&qlt=90&c=1&rs=1&dpr=1.3125&p=0');
+
+            border: solid red;
+            background-repeat: no-repeat;
+
+            /* agr apki pic repeat ho rahi hai toh ap yah akr skte hain*/
+
+            background-position:11px center;
+            background-position: center;
+        
+
+         }
+    </style>
+</head>
+<body>
+    <h3>this is heading</h3>  
+    <p id="fristpara">this is the paragraph</p>
+
+    <h3>this is secound heading</h3>  
+    <p id="secoundpara">this is my secound paragraph</p>
+
+    
+    <h3>this is thrid heading</h3>  
+    <p id="thridpara">this is my thrid paragraph</p>
+</body>
+</html>
